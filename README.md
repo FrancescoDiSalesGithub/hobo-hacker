@@ -1,2 +1,5 @@
 # hobo-hacker
-hacking tools using basic linux command line tools instead of complex frameworks 
+
+![logo](OIG1.cjr18.jpeg)
+
+hacking tools using basic linux command and bash shell scripting instead of complex frameworks 
