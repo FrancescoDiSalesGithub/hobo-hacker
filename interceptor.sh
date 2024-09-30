@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-while [ True ]
+while [ true ]
 do
 
 	
