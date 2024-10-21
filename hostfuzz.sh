@@ -2,13 +2,36 @@
 
 host=$1
 fuzz=$2
-
-for line in $(cat $fuzz)
-do
-
-	scan=$(curl -o /dev/null -s -w "%{http_code}\n" http://$host/$line)
-
-echo $line" - "$scan
+useragent=$3
 
 
-done
+	if [ "$useragent" == "" ]
+	then
+
+		echo "your requests will be visible with the user agent curl it is suggested to pass as third parameter the web user agent"
+
+		for line in $(cat $fuzz)
+		do
+
+			scan=$(curl -o /dev/null -s -w "%{http_code}\n" http://$host/$line)
+
+		echo $line" - "$scan
+
+		done
+	else
+
+		for line in $(cat $fuzz)
+		do
+
+			scan=$(curl -o /dev/null -H 'User-Agent:$useragent' -s -w "%{http_code}\n" http://$host/$line)
+
+		echo $line" - "$scan
+
+		done
+
+	fi
+
+
+
+
+
