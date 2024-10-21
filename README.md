@@ -82,8 +82,8 @@ bash md5cracker.sh b1946ac92492d2347c6235b4d2611184 dictionary.txt
 
 I hope you found this experiment interesting. I love creating open-source projects and sharing knowledge with the community. If you’d like to support my future work, you can do so in a couple of ways:
 
-💰 Donate Monero (XMR): ```4B9WQivaHfd3miDfPKEfCianocGpBx9d8FXycz2vmNW3aBDVKHgkBd9Gmapt4RBVEpTwnehujsiUBBehUiLvnEHs7VFstCC```
-💵 Donate via PayPal: https://www.paypal.me/francescodisales
+* 💰 Donate Monero (XMR): ```4B9WQivaHfd3miDfPKEfCianocGpBx9d8FXycz2vmNW3aBDVKHgkBd9Gmapt4RBVEpTwnehujsiUBBehUiLvnEHs7VFstCC```
+* 💵 Donate via PayPal: https://www.paypal.me/francescodisales
 
 Every donation helps me continue building tools, research, and experiments for the benefit of the community. Thank you for your support!
  
