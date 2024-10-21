@@ -10,6 +10,7 @@ hacking tools using basic linux command and bash shell scripting instead of comp
 * ip sweep
 * port scanning
 * Rest api calls
+* Cracking hash
 * Donation
 
 ## Introduction 
@@ -64,6 +65,18 @@ For jsonpost.sh for first parameter it's mandatory the host, and as the second p
 ```
 bash jsonpost.sh myvulnsite.com {"value":1}
 ```
+
+## Cracking hash
+The following bash scripts crack the following hash algorithm using dictionary attack:
+* md5cracker.sh => cracks md5 hashes
+* sha1cracker.sh => cracks sha1 hashes
+* sha256cracker.sh => cracks sha256 hashes
+
+For each of these bash scripts pass as first argument the hash and as second argument the dictionary file:
+```
+bash md5cracker.sh b1946ac92492d2347c6235b4d2611184 dictionary.txt
+```
+
 
 # Donation
 
