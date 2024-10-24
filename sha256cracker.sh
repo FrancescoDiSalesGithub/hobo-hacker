@@ -4,7 +4,7 @@
 for  item in $(cat $2)
 do
 
-    hash=$(echo $item | sha1sum | awk '{print $1}')
+    hash=$(echo $item | sha256sum | awk '{print $1}')
 
     if [ "$hash" == "$1" ] 
     then
