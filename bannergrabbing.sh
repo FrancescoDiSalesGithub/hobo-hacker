@@ -4,4 +4,4 @@
 host=$1
 
 
-curl -L  --head htt://$host
+curl -L  --head http://$host
