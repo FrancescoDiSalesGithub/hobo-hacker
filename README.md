@@ -108,9 +108,13 @@ bash proxy.sh 1234
 
 ## Tracking Open Files
 
-It tracks the file opened by a specific application:
+It tracks the file opened by a specific application. If you don't want to save the logs to a file just run:
 ```
 bash tracking-open-file-program.sh /bin/application
+```
+if you want to save the logs to a file just add as second paramter the path where you want to save the dump:
+```
+bash tracking-open-file-program.sh /bin/application /home/user/dump/dump.txt
 ```
 
 ## Logger
