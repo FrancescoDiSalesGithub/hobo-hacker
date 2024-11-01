@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export SSLKEYLOGFILE=$2/sslkeys.log
+export SSLKEYLOGFILE="$2/sslkeys.log"
 
 if [ "$SSLKEYLOGFILE" == "" ]
 then
@@ -9,7 +9,6 @@ else
 
     interface=$1
     program_exists=$(ls /bin | grep chromium)
-
 
     if [ "$program_exists" != ""]
     then
@@ -20,7 +19,7 @@ else
         sudo tcpdump -i $interface -w https_traffic.pcap port 443 
         
     else
-
+        echo "chromium not found please install it"
     fi
 
       

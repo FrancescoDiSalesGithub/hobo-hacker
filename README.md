@@ -16,6 +16,7 @@ hacking tools using basic linux command and bash shell scripting instead of comp
 * proxy
 * tracking-open-files
 * logger
+* https dump
 * Donation
 
 ## Introduction 
@@ -116,6 +117,12 @@ bash tracking-open-file-program.sh /bin/application
 Logs the content of a specific file by listening on a specific port:
 ```
 bash logger.sh /var/log/nginx/access.log 1234
+```
+
+## https dump
+Dumps https traffic on client side:
+```
+bash httpsdump.sh /home/myuser wlan0
 ```
 
 # Donation
