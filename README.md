@@ -11,6 +11,11 @@ hacking tools using basic linux command and bash shell scripting instead of comp
 * port scanning
 * Rest api calls
 * Cracking hash
+* port forwarding
+* banner-grabbing
+* proxy
+* tracking-open-files
+* logger
 * Donation
 
 ## Introduction 
@@ -77,6 +82,41 @@ For each of these bash scripts pass as first argument the hash and as second arg
 bash md5cracker.sh b1946ac92492d2347c6235b4d2611184 dictionary.txt
 ```
 
+## Port forwarding
+To forward the traffic to a port for a specific service you need to launch **portforwarding.sh** as the following:
+```
+bash portforwarding.sh YOUR_LOCAL_PORT SERVICE_IP SERVICE_PORT
+```
+where:
+* YOUR_LOCAL_PORT = the port where you want to forward traffic
+* SERVICE_IP = the ip of your service
+* SERVICE_PORT = the port of your service
+
+## Banner grabbing
+Just insert the host where you want to grab the banner
+```
+bash bannergrabbing.sh
+```
+
+## Proxy
+
+Just insert the port where the proxy has to listen:
+```
+bash proxy.sh 1234
+```
+
+## Tracking Open Files
+
+It tracks the file opened by a specific application:
+```
+bash tracking-open-file-program.sh /bin/application
+```
+
+## Logger
+Logs the content of a specific file by listening on a specific port:
+```
+bash logger.sh /var/log/nginx/access.log 1234
+```
 
 # Donation
 
