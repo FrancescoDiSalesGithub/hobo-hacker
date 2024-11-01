@@ -17,6 +17,7 @@ hacking tools using basic linux command and bash shell scripting instead of comp
 * tracking-open-files
 * logger
 * https dump
+* postgresql bruteforce
 * Donation
 
 ## Introduction 
@@ -128,6 +129,19 @@ Dumps https traffic on client side:
 ```
 bash httpsdump.sh /home/myuser wlan0
 ```
+
+## Postgresql bruteforce
+Run the pgsql-brute.sh script passing the following arguments:
+* user
+* host
+* dictionary file
+
+If the password is found the script will print the following output:
+```
+PASSWORD FOUND: [ mypassword ]
+```
+
+Where the password is in the square brackets
 
 # Donation
 
