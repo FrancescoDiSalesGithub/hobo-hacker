@@ -28,7 +28,7 @@ else
 
             chromium --no-sandbox &
             sleep 5
-            sudo tcpdump -i $interface -w https_traffic.pcap port 443 
+            sudo tcpdump -i $interface -w $2/https_traffic.pcap port 443 
         else
             echo "chromium not found please install it"
         fi
